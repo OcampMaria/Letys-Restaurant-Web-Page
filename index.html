@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,11 @@
 
     <!-- font-awesome css -->
     <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+   
     <!--font-awesome cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Scroll reveal CDN -->
@@ -22,99 +27,55 @@
 </head>
 
 <body>
-  <!-- this is the top footer. this contains the phone number of the place. might need to delete later -->
-  <footer class="container">
-      <div class="content has-text-left">
-        <p>
-          <span> 
-            <strong>(559) 456-8690</strong> 
-            4770 E Clinton Ave Fresno CA ,93703
-          </span>
-         </p>
-      </div>
-  </footer>
-  <!-- footer ends -->
-  
-  <!-- Navbar starts. Used Bulma CSS framework -->
-  <nav class="navbar " role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://instagram.com/letysrestaurants?igshid=16py5yc8q31mm">
-      <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/103275071_3146965935341602_5886898325905279261_n.jpg?_nc_cat=107&ccb=2&_nc_sid=110474&_nc_ohc=-IoyctvZ1MoAX_YF24Y&_nc_ht=scontent-lax3-2.xx&oh=8b048e8d52d1078671a214c41988bb23&oe=5FD5589E" width="25" height="25">
-      </a>
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <header id="navbarBasicExample" class="navbar-menu menu-toggle">
-      <!-- navbar items-->
-      <items class="navbar-end">
-
-        <a class="navbar-item"> Welcome </a>
-        <a class="navbar-item"> About </a>
-        <a class="navbar-item">Menu</a>
-        <a class="navbar-item">Contact</a>
-
-      </items>
-      <!-- social media inside of navBar -->
-      <social class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <!-- Instagram link and Icon -->
-            <p class="control">
-              <a data-social-network="instagram" data-social-action="instagram" data-social-target="https://instagram.com/letysrestaurants" target="_blank" href="https://www.instagram.com/letysrestaurants/?igshid=16py5yc8q31mm">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </p>
-            <!-- Facebook link and Icon -->
-            <p class="control">
-              <a data-social-network="Facebook" data-social-action="Facebook" data-social-target="https://facebook.com" target="_blank" href="https://www.facebook.com/pages/Lety's%20Authentic%20Mexican%20Food/159791017373604/">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </p>
-          </div>
-        </div>
-      </social>
-    </header>
-    <!-- Navbar ends -->
-  </nav>
  
-  <!-- Welsome Section -->
-  <welcome class="section">
+  <header>
     <div class="container">
-      <h1 class="title"> Welcome! </h1>
-      <p class="subtitle"> Lety's Mexican Restaurant!</p>
+      <nav class="nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="logo"> <img src="images/letys.png" alt=""></a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </welcome>
-
-  <!-- Daily Specials and Menu Sections -->
-  <menu class="ui three column divided grid">
-    <div class="row">
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
+  </header>
+    <!-- header ends -->
+    <!-- Hero Starts -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <h2 class="subheadline">
+        <span class="first-letter">W</span>elcome
+      </h2>
+      <h1 class="headline">Lety's Mexican Restaurant</h1>
+      <div class="headline-description">
+        <div class="separator">
+          <div class="line line-left"></div>
+          <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          <div class="line line-right"></div>
+        </div>
+        <div class="single-animation"></div>
+        <h5>Ready to be opened</h5>
+        <a href="#" class="bnt cta-btn"></a>
       </div>
     </div>
-  </menu>
+  </section>
+  <!-- hero ends -->
+ 
+  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="./Develop/js/script.js"></script>
