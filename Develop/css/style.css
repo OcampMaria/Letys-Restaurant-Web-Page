@@ -18,27 +18,4 @@
     --body-font-color: #515151;
 }
 
-<<<<<<< HEAD
-=======
-/* .wrapper {
-    min-height: 100%;
-    position: relative;
-}
 
-.content {
-    /* padding the footer adds 40 to footer height */
-    padding-bottom: 140px;
-} */
-
-#footer {
-    position: absolute;
-    bottom: 0;
-    background: #444444;
-    height: 100px;
-    font-family: 'Open Sans', sans-serif;
-    color: #FFFFFF;
-    padding-bottom
-    : 20px;
-}
-
->>>>>>> b5727b0ccd0f78e13429b776bea7c7b7f6ee21c6

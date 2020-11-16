@@ -11,7 +11,11 @@
 
     <!-- font-awesome css -->
     <link rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+   
     <!--font-awesome cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Scroll reveal CDN -->
@@ -94,10 +98,26 @@
   </welcome>
 
   <hr> <br>
+  <!-- About Us Section -->
+  <div class="container has-background-warning">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 has-text-dark>About Us</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <img src="" alt="" width="" height="">
+        </div>
+        <div class="col-md-10">
+            <p class="has-text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusantium explicabo blanditiis odit quod. Itaque enim dolor pariatur, quibusdam perspiciatis velit voluptates repellat provident placeat dignissimos? Obcaecati possimus provident corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptates consequatur labore dolorem ab nostrum quod nesciunt dolores sunt mollitia necessitatibus saepe est ipsum, veniam quia nulla nobis illum quae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quibusdam officiis maiores nemo reprehenderit dolores placeat voluptatibus deleniti molestiae quasi? Et libero obcaecati temporibus, ut magnam iure voluptatibus cupiditate nemo?</p>
+        </div>
+    </div>
+  </div>
 
   <!-- Daily Specials and Menu Sections -->
   <menu class="ui three column divided grid">
-    <div class="row">
+    <section class="row">
       <div class="column">
         <p>menu</p>
       </div>
@@ -107,8 +127,8 @@
       <div class="column">
         <p>menu</p>
       </div>
-    </div>
-    <div class="row">
+    </section>
+    <section class="row">
       <div class="column">
         <p>menu</p>
       </div>
@@ -118,65 +138,63 @@
       <div class="column">
         <p>menu</p>
       </div>
-    </div>
+    </section>
   </menu>
   
   
   <!-- Contact Info-->
-        <div id="contact-info" class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4 is-centered">Phone Number</p>
-                                <p class="subtitle is-6">
-                                <ol>
-                                    <li>(559) 456-8690</li>
-                                    <li>(559) 226-7390</li>
-                                    <li>(559) 271-4558</li>
-                                </ol>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <contact id="contact-info" class="columns">
+    <card class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4 is-centered">Phone Number</p>
+              <p class="subtitle is-6">
+              <ol>
+                <li>(559) 456-8690</li>
+                <li>(559) 226-7390</li>
+                <li>(559) 271-4558</li>
+              </ol>
+              </p>
             </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Address</p>
-                                <p class="subtitle is-6">
-                                <ol>
-                                    <li>4770 E. Clinton Ave. #101, Fresno, CA 93703</li>
-                                    <li>1432 W. Ashlan Ave. Fresno, CA 93705</li>
-                                    <li>2430 N. Brawley Ave. Fresno, CA 93722</li>
-                                </ol>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">E-Mail</p>
-                                <p class="subtitle is-6">
-                                    something@email.com
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+    </card>
+
+    <card class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">Address</p>
+              <p class="subtitle is-6">
+              <ol>
+                <li>4770 E. Clinton Ave. #101, Fresno, CA 93703</li>
+                <li>1432 W. Ashlan Ave. Fresno, CA 93705</li>
+                <li>2430 N. Brawley Ave. Fresno, CA 93722</li>
+              </ol>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </card>
+
+    <card class="column">
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-4">E-Mail</p>
+              <p class="subtitle is-6"> something@email.com <br><br><br></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </card>
+  </contact>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <script src="./Develop/js/script.js"></script>
