@@ -1,12 +1,41 @@
-/* .navbar {
-    background-color: #0a0a0a;
-    align-content: center;
-    color: white;
-    height: 9%;
-  }
-  
-  .navbar .navbar-brand > .navbar-item,
-  .navbar .navbar-brand .navbar-link {
-    color: white;
-    font-family: 'Wavehaus';
-  } */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/*Global styles*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Herr Von Muellerhoff', cursive;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: #515151;
+}
+
+/* .wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+.content {
+    /* padding the footer adds 40 to footer height */
+    padding-bottom: 140px;
+} */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    background: #444444;
+    height: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    padding-bottom
+    : 20px;
+}
+
