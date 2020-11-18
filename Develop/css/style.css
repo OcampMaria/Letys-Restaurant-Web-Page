@@ -17,5 +17,22 @@
     --secondary-font-color: #c59d5f;
     --body-font-color: #515151;
 }
+ #map_wrapper {
+    height: 400px;
+}
 
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.is-4 {
+  text-align: center; 
+  font-family: verdana;
+}
+
+.is-6 {
+  text-align: center; 
+  font-family: verdana;
+}
 
