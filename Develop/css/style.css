@@ -1,16 +1,14 @@
+body {
+  background-color: red;
+}
 
 
-
-
-/* .navbar {
-    background-color: #0a0a0a;
-    align-content: center;
-    color: white;
-    height: 9%;
-  }
-  
-  .navbar .navbar-brand > .navbar-item,
-  .navbar .navbar-brand .navbar-link {
-    color: white;
-    font-family: 'Wavehaus';
-  } */
+.footer {
+  position: relative;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(62, 114, 2);
+  text-align: center;
+}
