@@ -1,3 +1,5 @@
+
+//   Maps
 function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
@@ -59,3 +61,12 @@ function initMap() {
 
 }
 
+
+// Storage
+var saveButton = document.querySelector(".button");
+
+saveButton.addEventListener("click", function() {
+    var inputEmail = document.querySelector(".input");
+    localStorage.setItem(".input", inputEmail.value);   
+}
+)

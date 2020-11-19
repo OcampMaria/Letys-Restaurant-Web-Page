@@ -39,3 +39,19 @@
 html, body {
   overflow: visible;
 }
+
+/* Storage */
+body {
+  background-color: red;
+}
+
+
+.footer {
+  position: relative;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(62, 114, 2);
+  text-align: center;
+}
