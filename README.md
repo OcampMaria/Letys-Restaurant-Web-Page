@@ -22,7 +22,7 @@ https://ocampmaria.github.io/Project1/
 
 ## Image 
 
-![](Password-demo.png)
+![](Project1_Pic.png)
 
 ## Liscence 
 
