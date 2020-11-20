@@ -8,6 +8,43 @@ $.ajax({
 
   $(".weather").html("<h1> Weather Details: " + response.current.temp + " " + response.current.weather[0].description + " </h1>");
 });
+
+var buttonKaraoke = document.getElementById("btnKaraoke");
+var modalKaraoke = document.getElementById("modal1");
+var close = document.getElementsByClassName("modal-close")[0];
+
+
+// modal
+buttonKaraoke.onclick = function(){
+    modalKaraoke.style.display = "block"
+}
+close.onclick = function(){
+    modalKaraoke.style.display = "none";
+}
+close.onclick = function(){
+    modalKaraoke.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target.className == "modal-background") {
+        modalKaraoke.style.display = "none"
+    }
+}
+
+
+
+// select element sunction
+const selectEl= function (element) {
+    return document.querySelector(element);
+};
+
+let menuToggler = selectEl(".nav-toggle");
+let body = selectEl("body");
+
+menuToggler.addEventListener("click", function () {
+    body.classList.toggle("open")
+});
+
+
 //   Maps
 function initMap() {
     var map;
@@ -66,8 +103,6 @@ function initMap() {
         // Automatically center the map fitting all markers on the screen
         map.fitBounds(bounds);
     }
-
-
 }
 
 
@@ -77,5 +112,6 @@ var saveButton = document.querySelector(".button");
 saveButton.addEventListener("click", function() {
     var inputEmail = document.querySelector(".input");
     localStorage.setItem(".input", inputEmail.value);   
-}
-)
+})
+
+document.getElementById("input").value = localStorage.getItem(".input");

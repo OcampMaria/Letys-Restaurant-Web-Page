@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,237 +8,381 @@
     <title>Lety's Mexican Restaurant</title>
     <!-- bulma cdn. CSS framework-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-
-
-
     <!-- font-awesome css -->
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-   
     <!--font-awesome cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Scroll reveal CDN -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Semantic UI CDN. CSS framework -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"/>
-  <!--New Maps API Link-->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./Develop/css/style.css">
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqsJS840rhRLKvOIMbcUAokfwgAFMsB50&callback=initMap"
-        defer></script>
     <!-- link to the page CSS file -->
     <link rel="stylesheet" href="./Develop/css/style.css">
-
+    <!--  Maps API -->
+    
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqsJS840rhRLKvOIMbcUAokfwgAFMsB50&callback=initMap" defer>
+    </script>
 </head>
 
 <body>
-  <!-- this is the top footer. this contains the phone number of the place. might need to delete later -->
-  <footer class="container">
-      <div class="content has-text-left">
-        <p>
-          <span> 
-            <strong>(559) 456-8690</strong> 
-            4770 E Clinton Ave Fresno CA ,93703
-          </span>
-         </p>
-      </div>
-  </footer>
-  <!-- footer ends -->
-  
-  <!-- Navbar starts. Used Bulma CSS framework -->
-  <nav class="navbar " role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="https://instagram.com/letysrestaurants?igshid=16py5yc8q31mm">
-      <img src="https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/103275071_3146965935341602_5886898325905279261_n.jpg?_nc_cat=107&ccb=2&_nc_sid=110474&_nc_ohc=-IoyctvZ1MoAX_YF24Y&_nc_ht=scontent-lax3-2.xx&oh=8b048e8d52d1078671a214c41988bb23&oe=5FD5589E" width="25" height="25">
-      </a>
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <header id="navbarBasicExample" class="navbar-menu menu-toggle">
-      <!-- navbar items-->
-      <items class="navbar-end">
-
-        <a class="navbar-item"> Welcome </a>
-        <a class="navbar-item"> About </a>
-        <a class="navbar-item">Menu</a>
-        <!-- Added href to link to secction   -->
-        <a href="#contact-info" class="navbar-item">Contact</a>
-      
-
-      </items>
-      <!-- social media inside of navBar -->
-      <social class="navbar-end">
-        <div class="navbar-item">
-          <div class="field is-grouped">
-            <!-- Instagram link and Icon -->
-            <p class="control">
-              <a data-social-network="instagram" data-social-action="instagram" data-social-target="https://instagram.com/letysrestaurants" target="_blank" href="https://www.instagram.com/letysrestaurants/?igshid=16py5yc8q31mm">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </p>
-            <!-- Facebook link and Icon -->
-            <p class="control">
-              <a data-social-network="Facebook" data-social-action="Facebook" data-social-target="https://facebook.com" target="_blank" href="https://www.facebook.com/pages/Lety's%20Authentic%20Mexican%20Food/159791017373604/">
-                <i class="fab fa-facebook-square"></i>
-              </a>
-            </p>
-          </div>
-
-        </div>
-      </social>
-    </header>
-    <!-- Navbar ends -->
-  </nav>
- 
-  <!-- Welsome Section -->
-  <welcome class="section">
-    <div class="container">
-      <h1 class="title"> Welcome! </h1>
-      <p class="subtitle"> Lety's Mexican Restaurant!</p>
-    </div>
-  </welcome>
-
-  <hr> <br>
-  <!-- About Us Section -->
-  <div class="container has-background-warning">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 has-text-dark>About Us</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">
-            <img src="" alt="" width="" height="">
+ <!-- header -->
+  <header>
+    <div class="container" >
+      <nav class="navigation">
+        <div class="nav-toggle">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
         </div>
         
+        <a href="index.html"> 
 
-        <div class="col-md-10">
-            <p class="has-text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae accusantium explicabo blanditiis odit quod. Itaque enim dolor pariatur, quibusdam perspiciatis velit voluptates repellat provident placeat dignissimos? Obcaecati possimus provident corrupti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta voluptates consequatur labore dolorem ab nostrum quod nesciunt dolores sunt mollitia necessitatibus saepe est ipsum, veniam quia nulla nobis illum quae! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quibusdam officiis maiores nemo reprehenderit dolores placeat voluptatibus deleniti molestiae quasi? Et libero obcaecati temporibus, ut magnam iure voluptatibus cupiditate nemo?</p>
-        </div>
+          <div class="ui medium image">
+            <img src="images/lettys02.png">
+          </div>
+         
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#aboutUs" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Menu" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Karaoke" class="nav-link">Karaoke</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
+    <!-- header ends -->
+    
+    <!-- Welcome Starts -->
+  <section class="welcome" id="welcome" >
+    <div class="container">
+      <h2 class="subheadline">
+        <span class="firstLetter">W</span>elcome
+      </h2>
+      <h1 class="headline">Lety's Authentic Mexican Food</h1>
+      <div class="headlineDescript">
+        <div class="separator">
+          <div class="line line-left"></div>
+          <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          <div class="line line-right"></div>
+        </div>
+        <div class="Sanimation">
+          <h5>Three Locations</h5>
+          <a href="#contact" class="btn cta-btn">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- welcome ends -->
+  <!-- About Us -->
+  <section class="aboutUs" id="aboutUs">
+    <div class="container">
+      <div class="Info">
+        <div class="restaurant-description padding-right animateLeft">
+          <div class="global-headline">
+            <h2 class="subheadline">
+              <span class="firstLetter">D</span>iscover
+            </h2>
+            <h1 class="headline headline-dark">Our Story</h1>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eaque eveniet odio libero dolorem quo inventore recusandae provident perspiciatis nihil optio facilis sapiente in, ipsa iusto dignissimos perferendis tenetur atque.</p>
+          <a href="" class="btn body-btn">About us</a>
+        </div>
+        <div class="restaurant-info-img animateRight">
+          <img src="images/Mexico.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--About Us ends -->
+  <!-- Menu -->
+  <section class="section tasteful-recipes between" id="Menu">
+    <div class="container">
+      <div class="global-headline">
+        <div class="animateTop">
+          <h2 class="subheadline">
+            <span class="firstLetter">D</span>iscover
+          </h2>
+        </div>
+        <div class="animateBottom">
+          <h1 class="headline ">Menu</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Menu ends -->
+  <!-- Specials -->
+  <section class="section discover-our-menu" id="Menu">
+    <div class="container">
+      <div class="Info">
+        <div class="image-group padding-right animateLeft">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+        <div class="restaurant-description animateRight">
+          <div class="global-headline">
+            <h2 class="subheadline">
+              <span class="firstLetter">F</span>ood
+            </h2>
+            <h1 class="headline headline-dark">specials</h1>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum aliquam nesciunt fugiat tempore laborum voluptas, sunt atque reiciendis harum, aperiam quis animi vero optio distinctio sed illo quo hic.</p>
+          <button class="test">
+            <a class="btn body-btn">View full menu</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Join the Fun -->
+  <section class="section tasteful-recipes between" id="Karaoke">
+    <div class="container">
+      <div class="global-headline">
+        <div class="animateTop">
+          <h2 class="subheadline">
+            <span class="firstLetter">J</span>oin
+          </h2>
+        </div>
+        <div class="animateBottom">
+          <h1 class="headline">The Fun</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Karaoke nights -->
+  <section class="Karaoke section discover-our-menu" >
+    <div class="container">
+      <div class="Info">
+        <div class="restaurant-description animateRight ">
+          <div class="global-headline">
+            <h2 class="subheadline">
+              <span class="firstLetter">K</span>araoke
+            </h2>
+            <h1 class="headline headline-dark">Nights</h1>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum aliquam nesciunt fugiat tempore laborum voluptas, sunt atque reiciendis harum, aperiam quis animi vero optio distinctio sed illo quo hic.</p>
 
-  <!-- Daily Specials and Menu Sections -->
-  <menu class="ui three column divided grid">
-    <section class="row">
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-    </section>
-    <section class="row">
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-      <div class="column">
-        <p>menu</p>
-      </div>
-    </section>
-  </menu>
-  
- <!-- Contact Info -->
-  <div id="contact-info" class="columns">
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Lety's #1</p>
-                                <p class="subtitle is-6">
-                                    4770 E. Clinton Ave. #101<br>
-                                    Fresno, CA 93703<br>
-                                    (559) 456-8690 <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <!-- Modal Access Karaoke nights hours -->
+          <div class="modal" id="modal1">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+              <!-- Any other Bulma elements you want -->
+              <div class="section modalWrap">
+                <article class="message is-info is-large">
+                  <div class="message-body">
+                    <p>Karaoke hours</p>                
+                  </div>
+                  <div class="message-body">                         
+                    <ul>
+                      <li>Monday:</li>
+                      <li>Tuesday:</li>
+                      <li>Wednesday</li>
+                      <li>Thursday:</li>
+                    </ul>
+                  </div>
+                </article>                
+              </div>             
             </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Lety's #2</p>
-                                <p class="subtitle is-6">
-                                    1432 W. Ashlan Ave.<br>
-                                    Fresno, CA 93705<br>
-                                    (559) 226-7390<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Lety's #3</p>
-                                <p class="subtitle is-6">
-                                    2450 N. Brawley Ave. #104<br>
-                                    Fresno, CA 93722<br>
-                                    (559) 271-4558<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div> 
+            <!-- modal ends -->
+            <!-- button to access modal -->
+          <button >
+            <a class="btn body-btn" id="btnKaraoke">View Hours</a>
+          </button>
+        </div>
+        <div class="image-group padding-right animateLeft">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  <!-- Karaoke ends -->
   
+   <!-- 3 locations -->
+   <section class="section tasteful-recipes between" id="specials">
+    <div class="container">
+      <div class="global-headline">
+        <div class="animateTop">
+          <h2 class="subheadline">
+            <span class="firstLetter">D</span>iscover
+          </h2>
+        </div>
+        <div class="animateBottom">
+          <h1 class="headline">our 3 locations</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contact Info -->
+  <section class="Info contact" id="contact">
+    <div class="container cards">
+      
+        <div class="restaurant-description padding-right animateLeft">
+          <div class="global-headline">
+            <h2 class="subheadline">
+              <span class="firstLetter">C</span>ontact
+            </h2>
+            <h1 class="headline headline-dark">Info</h1>
+            <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          </div>
+        
+        </div>
+       
+        <!-- Contact Info -->
+        <div id="contact-info" class="columns">
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-2">Lety's #1</p>
+                    <p class="subtitle is-4">
+                      4770 E. Clinton Ave. #101<br>
+                      Fresno, CA 93703<br>
+                      (559) 456-8690 <br>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </card>
-  </contact>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-2">Lety's #2</p>
+                    <p class="subtitle is-4">
+                      1432 W. Ashlan Ave.<br>
+                      Fresno, CA 93705<br>
+                      (559) 226-7390<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-2">Lety's #3</p>
+                    <p class="subtitle is-4">
+                      2450 N. Brawley Ave. #104<br>
+                      Fresno, CA 93722<br>
+                      (559) 271-4558<br>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+  </section>
+  <!-- contact Info Ends -->
+
 
         <div class="weather temp"></div>
 
-        <div id="map_wrapper">
-            <div id="map_canvas" class="mapping"></div>
-        </div>
-        
+  <!-- Maps API -->
+  <div id="map">
+    <div id="map_wrapper">
+      <div id="map_canvas" class="mapping"></div>
+    </div>
+  </div>
+  
 
-   <div class="field">
-      <label class="label">To be added to Mailing List</label>
-      <div class="control has-icons-left">
-        <input type="email" class="input" placeholder="e.g. hkakehas@cisco.com">
-        <span class="icon is-small is-left">
-          <i class="fa fa-envelope"></i>
-        </span>
+  <!-- footer -->
+  <footer>
+    <div class=" ui container">
+      <div class="back-to-top">
+        <a href="#welcome"><i class="fas fa-chevron-up"></i></a>
+      </div>
+      <div class="footer-content">
+        <div class="footer-content-about animateTop">
+          <h4>About Lety's Restaurants</h4>
+          <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cumque maxime, soluta labore illo dolorem, omnis adipisci eligendi tempora ut iste magni repellendus aut tenetur voluptatum ducimus provident nostrum. Quo.
+          </p>
+        </div>
+        <div class="footer-content-divider animateBottom">
+          <div class="social-media">
+            <h4>Follow along</h4>
+            <ul class="social-icons">
+              <li>
+                <a href="https://www.facebook.com/pages/Lety's%20Authentic%20Mexican%20Food/159791017373604/"><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href="https://instagram.com/letysrestaurants" target="_blank" href="https://www.instagram.com/letysrestaurants/?igshid=16py5yc8q31mm"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="newsletter-container field ">
+            <h4 class="news">Newsletter</h4>
+            
+            <label class="label">To be added to Mailing List</label>
+            <div class="field is-grouped">     
+              <!-- input field -->
+              <div class="control has-icons-left">
+                <input id="input" type="email" class="input" placeholder="e.g. hkakehas@cisco.com">
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <!-- submit button -->
+              <button class="button is-success">
+                <span class="icon is-small">
+                    <i class="fas fa-check"></i>
+                </span>
+                <span>Save</span>
+              </button>
+
+            </div>      
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="field">
-      <button class="button is-success">
-        Save
-      </button>
-    </div>
-
-  <!--jQuery cdn API-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./Develop/js/script.js"></script>
+  </footer>
+  <!-- footer ends -->
+  <!-- mailing list -->  
  
+
+
+<!-- mailing List ends -->
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="./Develop/js/script.js"></script>
+
 </body>
 </html>
