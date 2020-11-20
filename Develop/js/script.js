@@ -1,4 +1,13 @@
+var weatherURL = "https://api.openweathermap.org/data/2.5/onecall?lat=36.731651&lon=-119.785858&exclude=daily&appid=48af17a7060c2205e40c1b9e5e56df19&units=imperial";
 
+$.ajax({
+  url: weatherURL,
+  method: "GET"
+}).then(function(response) {
+  console.log(response);
+
+  $(".weather").html("<h1> Weather Details: " + response.current.temp + " " + response.current.weather[0].description + " </h1>");
+});
 //   Maps
 function initMap() {
     var map;
