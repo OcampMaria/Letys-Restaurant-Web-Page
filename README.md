@@ -24,7 +24,7 @@ https://ocampmaria.github.io/Project1/
 
 ![](Project1_Pic.png)
 
-## Liscence 
+## Licence 
 
 Copyright (c) Team "Power Rangers" 
 
