@@ -1,4 +1,4 @@
-# Project1
+# Letys-Restaurant-Web-Page
 
 ## Description 
 
