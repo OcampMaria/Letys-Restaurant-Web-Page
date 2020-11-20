@@ -1,3 +1,7 @@
+var buttonKaraoke = document.getElementById("btnKaraoke");
+var modalKaraoke = document.getElementById("modal1");
+var close = document.getElementsByClassName("modal-close")[0];
+
 var carousel = document.querySelector(".carouselbox");
 var next = carousel.querySelector(".next");
 var prev = carousel.querySelector(".prev");
@@ -21,32 +25,24 @@ function navigate(direction) {
     }
     currentImage = images[index];
     carousel.style.backgroundImage = "url('" + currentImage + "')";
-  }
+}
   
-  carousel.addEventListener("click", function() {
+carousel.addEventListener("click", function() {
     window.location.href = images[index];
-  });
+});
   
-  next.onclick= function(event) {
-    event.stopPropagation();
+next.onclick= function(event) {
+event.stopPropagation();
   
     navigate(1);
-  };
+};
   
-  prev.addEventListener("click", function(event) {
-    event.stopPropagation();
-  
+prev.addEventListener("click", function(event) {
+    event.stopPropagation();  
     navigate(-1);
-  });
+});
   
-  navigate(0);
-
-
-
-var buttonKaraoke = document.getElementById("btnKaraoke");
-var modalKaraoke = document.getElementById("modal1");
-var close = document.getElementsByClassName("modal-close")[0];
-
+navigate(0);
 
 // modal
 buttonKaraoke.onclick = function(){
@@ -79,7 +75,7 @@ menuToggler.addEventListener("click", function () {
 });
 
 
-// Google Maps API
+
 function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
