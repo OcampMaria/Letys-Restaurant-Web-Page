@@ -18,7 +18,7 @@ We hope you enjoy our first stage of this project. We think it is beautiful, and
 
 ## Application Link
 
-https://ocampmaria.github.io/Project1/
+https://ocampmaria.github.io/Letys-Restaurant-Web-Page/
 
 ## Image 
 
