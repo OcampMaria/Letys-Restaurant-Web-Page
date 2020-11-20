@@ -1,5 +1,81 @@
+var buttonKaraoke = document.getElementById("btnKaraoke");
+var modalKaraoke = document.getElementById("modal1");
+var close = document.getElementsByClassName("modal-close")[0];
 
-//   Maps
+var carousel = document.querySelector(".carouselbox");
+var next = carousel.querySelector(".next");
+var prev = carousel.querySelector(".prev");
+carousel.style.backgroundImage = "url('https://picsum.photos/300/200')";
+var index = 0;
+var images = [
+  "https://picsum.photos/300/200",
+  "https://picsum.photos/300/201",
+  "https://picsum.photos/300/202",
+  "https://picsum.photos/300/203"
+];
+var currentImage;
+
+// Carousel images
+function navigate(direction) {
+    index = index + direction;
+    if (index < 0) { 
+      index = images.length - 1; 
+    } else if (index > images.length - 1) { 
+      index = 0;
+    }
+    currentImage = images[index];
+    carousel.style.backgroundImage = "url('" + currentImage + "')";
+}
+  
+carousel.addEventListener("click", function() {
+    window.location.href = images[index];
+});
+  
+next.onclick= function(event) {
+event.stopPropagation();
+  
+    navigate(1);
+};
+  
+prev.addEventListener("click", function(event) {
+    event.stopPropagation();  
+    navigate(-1);
+});
+  
+navigate(0);
+
+// modal
+buttonKaraoke.onclick = function(){
+    modalKaraoke.style.display = "block"
+}
+close.onclick = function(){
+    modalKaraoke.style.display = "none";
+}
+close.onclick = function(){
+    modalKaraoke.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target.className == "modal-background") {
+        modalKaraoke.style.display = "none"
+    }
+}
+
+
+
+// select element sunction
+const selectEl= function (element) {
+    return document.querySelector(element);
+};
+
+let menuToggler = selectEl(".nav-toggle");
+let body = selectEl("body");
+
+menuToggler.addEventListener("click", function () {
+    body.classList.toggle("open")
+});
+
+
+
 function initMap() {
     var map;
     var bounds = new google.maps.LatLngBounds();
@@ -57,8 +133,6 @@ function initMap() {
         // Automatically center the map fitting all markers on the screen
         map.fitBounds(bounds);
     }
-
-
 }
 
 
