@@ -29,3 +29,6 @@ https://ocampmaria.github.io/Project1/
 Copyright (c) Team "Power Rangers" 
 
 All rights reserved.
+
+## Badges
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
