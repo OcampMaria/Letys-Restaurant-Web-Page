@@ -26,4 +26,6 @@ https://ocampmaria.github.io/Project1/
 
 ## Liscence 
 
-Copyright (c) Team "Power Rangers." All rights reserved.
+Copyright (c) Team "Power Rangers" 
+
+All rights reserved.
