@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
 /*Global styles*/
+
+
 *,
 *::before,
 *::after{
@@ -24,14 +26,21 @@ html{
     color: var(--body-font-color);
     scroll-behavior: smooth;
     color: rgba(0,0,0,.5);
+    
 }
+
+
 
 body{
     overflow-x: hidden;
 }
 
+html, body {
+    overflow: visible;
+  }
+
 section{
-    padding: 3.9rem 0;
+    padding: 6rem 0;
 }
 
 img{
@@ -39,6 +48,15 @@ img{
     max-width: 100%;
     padding-top: 15px;
    
+}
+
+
+
+.image{
+    display: block;
+    max-width: 100%;
+    padding-top: 4rem;
+    height: auto;
 }
 
 a{
@@ -59,21 +77,21 @@ p{
 /* header */
 header {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
 }
 
-.nav {
+.navigation {
     height: 7.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.menu-toggle{
+.nav-toggle{
     color: #fff;
     font-size: 2.2rem;
     position: absolute;
@@ -154,11 +172,13 @@ header {
     color: var(--secondary-font-color);
 }
 
-/* Hero */
-.hero{
+/* welcome */
+.welcome{
+    padding: 23rem 0;
     width: 100%;
     height: 100vh;
-    background: url("/images/redPepper.jpg") center no-repeat;
+    background: url("redPepper.jpg") center no-repeat;
+    background-color: #121212;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -178,7 +198,7 @@ header {
     animation-delay: .5s;
 }
 
-.first-letter{
+.firstLetter{
     text-transform: uppercase;
     font-size: 10.3;
 }
@@ -245,13 +265,13 @@ header {
     animation-delay: .7s;
 }
 
-.single-animation{
+.Sanimation{
     opacity: 0;
     animation: fadeDown .5s forwards;
     animation-delay: 1.5s;
 }
 
-.headline-description h5{
+.headlineDescript h5{
     color: #fff;
     font-size: 1.4rem;
     font-size: 1.4rem;
@@ -310,7 +330,7 @@ header {
     line-height: .42;
 }
 
-.restaurant-info{
+.Info{
     text-align: center;
 }
 
@@ -337,6 +357,11 @@ header {
     transition: background-color .5s;
 }
 
+/* carousel */
+.carouselbox{
+    position: relative;
+}
+
 .body-btn:hover, 
 .body-btn:focus{
     color: var(--main-font-color-dark);
@@ -349,7 +374,7 @@ header {
 
 /* Specials */
 .tasteful-recipes{
-    background: url(/images/backgroundHero.jpg) center no-repeat;
+    background: url(backgroundHero.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -370,11 +395,59 @@ header {
 padding-top: 3rem;
 margin-bottom: 0;
 }
+/* carousel */
+.carouselbox {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+  }
+  .buttons {
+    text-align: center;
+  }
+  button {
+    position: absolute;
+    margin-top: -30px;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .prev {
+    top: 280px;
+    left: 40px;
+  }
+  .next {
+    top: 280px;
+    left: 240px;
+  }
+  
 
-/* Perfect Blend */
-.perfect-blend{
-    background: url(/images/backgroundHero.jpg);
-    background-size: cover;
+/* modal */
+.modalWrap{
+    position: fixed;
+    width: 44rem;
+    padding-top: 15rem;
+    padding-left: 2rem;
+}
+
+/* Cards contact info */
+.is-4, .is-6{
+    text-align: center; 
+    font-family: verdana;
+  }
+  
+  
+/* Google Maps API */
+#map_wrapper {
+    height: 400px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.contact{
+    padding: 10rem 0;
 }
 
 /* footer */
@@ -414,7 +487,10 @@ footer{
     text-transform: uppercase;
     font-weight: 100;
     letter-spacing: 3px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+.footer-content .news{
+    margin-bottom: 0rem;  
 }
 
 .footer-content .asterisk{
@@ -449,44 +525,25 @@ footer{
     color: var(--secondary-font-color);
 }
 
-.newsletter-form{
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.newsletter-input{
-    width: 100%;
-    max-width: 25rem;
-    padding: 1rem;
-    border-radius: .4rem;
-}
-
-.newsletter-btn{
-    background-color: transparent;
-    border: none;
-    color: var(--main-font-color-dark);
-    cursor: pointer;
-    font-size: 1.6rem;
-    padding: 1px .6rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10.5rem;
+.control{
+    flex: auto;
 }
 
 /* media queries */
 @media screen and (min-width: 900px){
     section{
-        padding: 7.9rem;
+        padding: 14rem;
     }
 
-    .menu-toggle{
+    .welcome{
+        padding: 27rem;
+    }
+
+    .nav-toggle{
         display: none;
     }
 
-    .nav{
+    .navigation{
         justify-content: space-between;
     }
 
@@ -532,7 +589,7 @@ footer{
     .sub-headline{
         font-size: 10rem;
     }
-    .first-letter{
+    .firstLetter{
         font-size: 12.2rem;
     }
     .headline{
@@ -542,16 +599,23 @@ footer{
     .line{
         max-width: 11.4rem;
     }
-    .restaurant-info{
+    .Info{
         display: flex;
         align-items: center;
     }
-    .restaurant-info > div{
+    .Info > div{
         flex:1
     }
     .padding-right{
         padding-right: 7rem;
     }
+    .modalWrap{
+        position: fixed;
+        width: 69rem;
+        padding-top: 34rem;
+        padding-left: 1rem;
+    }
+
     .footer-content{
         max-width: 77.5rem;
         margin: auto;
@@ -564,18 +628,8 @@ footer{
         display: flex;
         justify-content: space-between;
     }
-
-    .social-media,
-    .newsletter-form{
-        width: 100%;
-        max-width: 27.3rem;
-        margin: 0 1rem;
-    }
     .social-icons i{
         opacity: 1;
-    }
-    .newsletter-btn{
-        margin-left: 7.5rem;
     }
 }
 
