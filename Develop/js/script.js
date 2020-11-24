@@ -104,3 +104,4 @@ saveButton.addEventListener("click", function() {
 })
 
 document.getElementById("input").value = localStorage.getItem(".input");
+
