@@ -22,7 +22,7 @@ https://ocampmaria.github.io/Letys-Restaurant-Web-Page/
 
 ## Image 
 
-![](Project1_Pic.png)
+![](./images/Project1_Pic.png)
 
 ## Licence 
 
