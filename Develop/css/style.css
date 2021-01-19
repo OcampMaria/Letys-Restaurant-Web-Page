@@ -175,8 +175,8 @@ header {
     padding: 23rem 0;
     width: 100%;
     height: 100vh;
-    background: url("redPepper.jpg") center no-repeat;
-    background-color: #121212;
+    background: url("./mexicanFoodPhoto.jpg") center no-repeat;
+    background-color: white;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -365,11 +365,31 @@ header {
     background-color: var(--main-font-color-dark);
 }
 
-/* Specials */
+/* Menu*/
 .tasteful-recipes{
-    background: url(backgroundHero.jpg) center no-repeat;
+    background: url("./mexicanFoodPhoto.jpg") center no-repeat;
     background-size: cover;
 }
+/* food */
+.food{
+    background: url("./recentPics/tacosMain.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+.karaoke{
+    background: url("./recentPics/karaokeMain.jpeg") center no-repeat;
+    background-size: cover;
+}
+.wak{
+    background: url("./recentPics/wacamole.jpeg") center no-repeat;
+    background-size: cover;
+}
+/* locations */
+.loc{
+    background: url("./recentPics/locMain.jpeg") center no-repeat;
+    background-size: cover;
+}
+
 
 .between{
     min-height: 65vh;
